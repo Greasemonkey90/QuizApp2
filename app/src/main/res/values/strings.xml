@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="title">Animal Facts</string>
+    <string name="questionHeader1">Question 1</string>
+    <string name="question1">How many hearts does an octopus have?</string>
+    <string name="questionHint">Enter answer here</string>
+    <string name="questionHeader2">Question 2</string>
+    <string name="question2">Check all that are mammals:</string>
+    <string name="choice2.1">Grizzly bear</string>
+    <string name="choice2.2">Cobra snake</string>
+    <string name="choice2.3">Killer whale</string>
+    <string name="choice2.4">Platypus</string>
+    <string name="choice2.5">Bald Eagle</string>
+    <string name="questionHeader3">Question3</string>
+    <string name="question3">Where do sea turtles lay their eggs?</string>
+    <string name="choice3.1">In the ocean</string>
+    <string name="choice3.2">On the beach</string>
+    <string name="choice3.3">In their shell</string>
+    <string name="choice3.4">They don\'t lay eggs</string>
+    <string name="questionHeader4">Question 4</string>
+    <string name="question4">How many legs does a hermit crab have?</string>
+    <string name="choice4.1">6</string>
+    <string name="choice4.2">8</string>
+    <string name="choice4.3">10</string>
+    <string name="choice4.4">12</string>
+    <string name="questionHeader5">Question 5</string>
+    <string name="choice5.1">Foal</string>
+    <string name="choice5.2">Lamb</string>
+    <string name="choice5.3">Kid</string>
+    <string name="choice5.4">Calf</string>
+    <string name="question5">What is a baby goat called?</string>
+    <string name="questionHeader6">Question 6</string>
+    <string name="question6">What is the fastest land mammal in the world?</string>
+    <string name="submitButton">SUBMIT</string>
+    <string name="toastAllCorrect">"Congratulations! You got answered all questions correctly!"</string>
+</resources>
