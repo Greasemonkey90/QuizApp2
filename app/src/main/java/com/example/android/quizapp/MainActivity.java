@@ -101,28 +101,43 @@ public class MainActivity extends AppCompatActivity {
      * @return the number of questions answered correctly
      */
     public int answerCount() {
+       int wrongAnswers = 0;
         int rightAnswers = 0;
-
+        int questions = 6;
         if (Question1()) {
-            rightAnswers += 1;
+            rightAnswers +=1;
+        } else {
+            wrongAnswers +=1;
         }
         if (Question2()) {
-            rightAnswers += 1;
+            rightAnswers +=1;
+        } else {
+            wrongAnswers +=1;
         }
         if (Question3()) {
-            rightAnswers += 1;
+            rightAnswers +=1;
+        } else {
+            wrongAnswers +=1;
         }
         if (Question4()) {
-            rightAnswers += 1;
+            rightAnswers +=1;
+        } else {
+            wrongAnswers +=1;
         }
         if (Question5()) {
-            rightAnswers += 1;
-        }
-        if (Question6()){
             rightAnswers +=1;
+        } else {
+            wrongAnswers +=1;
         }
-        return rightAnswers;
+        if (Question6()) {
+            rightAnswers +=1;
+        } else {
+            wrongAnswers +=1;
+        }
+
+        return rightAnswers | questions - wrongAnswers;
     }
+
 
     /***
      *This method checks how many right answers were entered in quiz.
