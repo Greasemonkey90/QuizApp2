@@ -42,10 +42,10 @@ public class MainActivity extends AppCompatActivity {
         boolean bearIsRight = bear.isChecked();
         boolean whaleIsRight = whale.isChecked();
         boolean platypusIsRight = platypus.isChecked();
-        //boolean snakeIsWrong = snake.isChecked();
-        //boolean eagleIsWrong = eagle.isChecked();
+        boolean snakeIsWrong = snake.isChecked();
+        boolean eagleIsWrong = eagle.isChecked();
 
-        boolean rightAnswer=  bearIsRight && whaleIsRight && platypusIsRight;
+        boolean rightAnswer=  bearIsRight && whaleIsRight && platypusIsRight && !eagleIsWrong && !snakeIsWrong;
 
         return rightAnswer;
     }
@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public boolean Question6() {
         EditText fastest = findViewById(R.id.fastestAnimal);
-        String theGuess = fastest.getText().toString();
+        String theGuess = fastest.getText().toString().toLowerCase().trim();
         boolean theAnswer = theGuess.equals("cheetah");
 
         return theAnswer;
